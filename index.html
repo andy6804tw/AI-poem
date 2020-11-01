@@ -7,12 +7,23 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/loading.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
 
-
+  <!-- Loading -->
+  <div class="loading d-none" id="loading">
+    <div>
+      <div class="c1"></div>
+      <div class="c2"></div>
+      <div class="c3"></div>
+      <div class="c4"></div>
+    </div>
+    <span>loading...</span>
+  </div>
+  <!-- Loading END -->
   <!-- Banner -->
   <section class="banner pt-2 pb-4">
     <!-- Banner Header -->
@@ -47,10 +58,10 @@
           輸入每一句的第一個字，讓 AI 為你寫出獨一無二的詩詞。
         </p><br>
         <input name="mood" placeholder="ex: 人工智慧">
-        <a class="btn btn-danger" href="" class="button">開始作詞</a>
+        <a class="btn btn-danger" class="button" onclick="startPredict()">開始作詞</a>
       </div>
       <div class="col-5 p-0">
-        <img class="animate__animated animate__fadeInRight" src="./image/Asset 1.png" alt="" srcset="">
+        <img class="animate__animated animate__fadeInRight" src="./image/Asset 1.png" alt="" srcset="" ondragstart="return false;">
       </div>
     </div>
   </section>
