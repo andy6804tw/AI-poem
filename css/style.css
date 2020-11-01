@@ -3,7 +3,6 @@ body {
     /* height: 100vh; */
 }
 
-
 nav .active{
     border-top:1px #000 solid;
     border-bottom:1px #000 solid;
@@ -18,6 +17,13 @@ section{
 .banner{
     padding-top: 100px;
     /* background-color: #3e90bf; */
+    /* background-image: url(https://i.pinimg.com/originals/24/a9/f3/24a9f3e6da0fc9b9ebf83b2bddb5c633.jpg); */
+    /* background-image: url(https://i.pinimg.com/originals/6e/82/a7/6e82a78d31d18d756dcd5928930f2804.jpg); */
+    /* background-image: url(https://i.pinimg.com/originals/cf/17/17/cf171746e072346ac7054fc302fc10b6.webp); */
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    background-size: cover;
 }
 .banner img{
     width: 100%;
@@ -30,22 +36,9 @@ input[name="mood"]
   color: #666666;
   text-decoration: none;
   font-size: 20px;
-  padding: 5px 8px; 
+  padding: 5px 8px;
   border-radius: 5px;
   border: 1px solid #cccccc;
-}
-
-a.button {
-  background-color: #f9365a;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 15px;
-  padding: 8px 10px; 
-  border-radius: 5px;
-  box-shadow: 0px 5px #f8153f;
-}
-
-.poem{
 }
 
 .poem div {
@@ -59,7 +52,7 @@ a.button {
     background-color: rgba(255, 255, 255, 0.034);
 }
 
-.poem P {
+.poem p {
     font-family: "Share Tech Mono", monospace;
     color: #f5f5f5;
     margin: 0 0 20px;
