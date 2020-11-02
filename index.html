@@ -57,8 +57,11 @@
         <p>
           輸入每一句的第一個字，讓 AI 為你寫出獨一無二的詩詞。
         </p><br>
-        <input name="mood" placeholder="ex: 人工智慧">
-        <a class="btn btn-danger" class="button" onclick="startPredict()">開始作詞</a>
+        <form action="javascript:void(0);" method="post">
+          <input id="words" name="words" placeholder="ex: 人工智慧" maxlength="4" required>
+        <input type="submit" class="btn btn-danger" class="button" onclick="startPredict()" value="開始作詞">
+        </form>
+        
       </div>
       <div class="col-5 p-0">
         <img class="animate__animated animate__fadeInRight" src="./image/Asset 1.png" alt="" srcset="" ondragstart="return false;">

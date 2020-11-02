@@ -35,7 +35,7 @@ section{
     width: 100%;
 }
 
-input[name="mood"]
+input[name="words"]
 {
   width: 300px;
   background-color: #ffffff;

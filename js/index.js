@@ -24,8 +24,15 @@ setTimeout(function(){
 
 const startPredict=()=>{
     const loadDOM=document.getElementById('loading');
-    loadDOM.classList.remove('d-none');
-    setTimeout(function(){
-        loadDOM.classList.add('d-none');
-    },3000)
+    let wordList=document.getElementById('words').value;
+    if(wordList.length>4)
+        wordList=wordList.substring(0,4);
+    console.log(wordList)
+    // 檢查否有效字串
+    if(wordList.length>0){
+        loadDOM.classList.remove('d-none');
+        setTimeout(function(){
+            loadDOM.classList.add('d-none');
+        },3000)
+    }
 }
