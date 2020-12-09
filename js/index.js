@@ -40,7 +40,7 @@ const startPredict = () => {
         // 暫停Demo動畫
         clearTimeout(initAnimate);
         axios.post(`https://ai-poem.herokuapp.com/predict`, {
-            "word": "人工智慧"
+            "word": wordList
         })
             .then((response) => {
                 // POST success & GET responsea
@@ -49,7 +49,7 @@ const startPredict = () => {
                 let poemHTML = '';
                 console.log(predictList);
                 for (let i = 0; i < predictList.length - 1; i++) {
-                    poemHTML += `<p><span>${wordList[i]} </span><i>${predictList[i]}</i></p>`
+                    poemHTML += `<p><span>${wordList[i]} </span><i>${predictList[i].substring(1, predictList[i].length)}</i></p>`
                 }
                 makePoem(poemHTML);
                 loadDOM.classList.add('d-none');
